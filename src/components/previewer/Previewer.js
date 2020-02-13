@@ -11,7 +11,7 @@ function Previewer() {
   useEffect(() => {
     const md = new Remarkable('full');
     setOutput(md.render(input));
-  })
+  }, [input])
 
   return (
     <div className="previewer">
